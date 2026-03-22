@@ -1,0 +1,30 @@
+{
+  "name": "hasirumane-root",
+  "version": "1.0.0",
+  "description": "HASIRUMANE Resort Website - Complete Full Stack Application",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/server.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": [
+    "resort",
+    "booking",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "HASIRUMANE",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
